@@ -6,12 +6,12 @@ import java.util.List;
 
 public interface LanguageRepository {
   List<Language> getAll();
-  void add(int id, String name);
+  void add(Language language);
 
   Language getById(int id);
 
 
   void delete(int id);
 
-  void update(int id, String name);
+  void update(Language language);
 }
