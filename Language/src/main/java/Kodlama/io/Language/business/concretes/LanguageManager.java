@@ -46,8 +46,8 @@ public class LanguageManager implements LanguageService {
     }
 
     @Override
-    public void update(int id, String name) {
-        languageRepository.update(id,name);
+    public void update(Language language) {
+        languageRepository.update(language);
     }
 
 }

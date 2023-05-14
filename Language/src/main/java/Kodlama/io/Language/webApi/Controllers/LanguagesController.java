@@ -36,7 +36,7 @@ public class LanguagesController {
         languageService.delete(id);
     }
     @PostMapping("/update")
-    public void update(int id, String name){
-        languageService.update(id,name);
+    public void update(Language language){
+        languageService.update(language);
     }
 }

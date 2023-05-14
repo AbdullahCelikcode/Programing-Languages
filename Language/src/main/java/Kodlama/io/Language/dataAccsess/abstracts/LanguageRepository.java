@@ -13,5 +13,5 @@ public interface LanguageRepository {
 
   void delete(int id);
 
-  void update(int id, String name);
+  void update(Language language);
 }

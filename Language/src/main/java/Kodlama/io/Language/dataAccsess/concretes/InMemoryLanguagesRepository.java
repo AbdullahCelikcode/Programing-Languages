@@ -39,8 +39,9 @@ public class InMemoryLanguagesRepository implements LanguageRepository {
     }
 
     @Override
-    public void update(int id, String name) {
-      Language language= languages.get((id-1));
-      language.setName(name);
+    public void update(Language language1) {
+      Language language= new Language();
+      language.setId(language1.getId());
+      language.setName(language1.getName());
     }
 }
