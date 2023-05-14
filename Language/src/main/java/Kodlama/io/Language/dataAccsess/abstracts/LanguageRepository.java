@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface LanguageRepository {
   List<Language> getAll();
-  void add(int id, String name);
+  void add(Language language);
 
   Language getById(int id);
 

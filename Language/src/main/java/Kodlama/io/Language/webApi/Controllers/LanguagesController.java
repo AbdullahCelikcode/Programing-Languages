@@ -24,8 +24,8 @@ public class LanguagesController {
         return languageService.getAll();
     }
    @PostMapping("/add")
-    public void add(int id, String name) throws Exception {
-        languageService.add(id,name);
+    public void add(Language language) throws Exception {
+        languageService.add(language);
     }
   @PostMapping("/getByid")
     public Language getById(int id) {

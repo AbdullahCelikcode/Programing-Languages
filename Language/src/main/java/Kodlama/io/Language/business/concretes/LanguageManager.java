@@ -28,16 +28,16 @@ public class LanguageManager implements LanguageService {
     }
 
     @Override
-    public void add(int id, String name) throws Exception {
+    public void add(Language language) throws Exception {
         List<Language>existingLanguage;
         existingLanguage=languageRepository.getAll();
-    for (Language language:existingLanguage){
-        if(language.getName().equalsIgnoreCase(name)){
+    for (Language forLanguage:existingLanguage){
+        if(forLanguage.getName().equalsIgnoreCase(language.getName())){
             throw new Exception(" Lütfen sistemde mevcut olmayan bir dil giriniz !!! ");
         }
     if (language.getName().isEmpty())  throw new Exception(" Lütfen programlama dili giriniz !!! ");
     }
-        languageRepository.add(id,name);
+        languageRepository.add(language);
     }
 
     @Override

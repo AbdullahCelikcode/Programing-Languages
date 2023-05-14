@@ -9,7 +9,7 @@ public interface LanguageService {
     List<Language>getAll();
     Language getById(int id);
 
-    void add(int id, String name) throws Exception;
+    void add(Language language) throws Exception;
 
     void delete(int id);
 

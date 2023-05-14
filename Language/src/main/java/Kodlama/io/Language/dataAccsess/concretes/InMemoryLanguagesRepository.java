@@ -24,8 +24,8 @@ public class InMemoryLanguagesRepository implements LanguageRepository {
     }
 
     @Override
-    public void add(int id, String name) {
-        languages.add(new Language(id,name));
+    public void add(Language language) {
+        languages.add(language);
     }
 
     @Override
